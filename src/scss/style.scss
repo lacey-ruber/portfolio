@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+@import 'variables.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import 'skills.scss';
+@import 'portfolio.scss';
+@import 'contacts.scss';
+@import 'footer.scss';
+
+*,
+*::before,
+*::after {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 12px;
+  color: var(--body-color);
+  background-color: var(--body-bg-color);
+  margin: 0 auto;
+  font-weight: 600;
+  overflow-x: hidden;
+  min-height: -webkit-fill-available;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--accent-color);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid var(--logo-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px 10px 0 0;
+  transition: all 0.3s ease;
+  color: var(--logo-color);
+  white-space: nowrap;
+  font-size: 14px;
+  &:hover,
+  &.active {
+    background-color: var(--active-logo-color);
+    color: var(--header-bg-color);
+  }
+  @media (max-width: 575px) {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+.notify {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: var(--logo-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    right: -6px;
+    bottom: 15px;
+  }
+}
+
+.dark-light {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--header-bg-color);
+  box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 50%;
+  z-index: 3;
+  svg {
+    width: 28px;
+  }
+}
+
+.dark-mode .dark-light svg {
+  fill: #ffce45;
+  stroke: #ffce45;
+}
+
+.dark-light svg {
+  fill: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: 1px solid var(--border-color);
+}

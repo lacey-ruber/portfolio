@@ -1,0 +1,22 @@
+:root {
+  --body-font: 'Manrope', sans-serif;
+  --body-color: #909090;
+  --body-bg-color: #fafafa;
+  --theme-bg-color: #fafafa;
+  --border-color: #efefef;
+  --header-bg-color: #fff;
+  --logo-color: #e75f5f;
+  --active-logo-color: #cf5757;
+  --main-color: #808080;
+  --accent-color: #303030;
+}
+
+.dark-mode {
+  --body-color: #dddee0;
+  --body-bg-color: #1e222b;
+  --theme-bg-color: #212835;
+  --border-color: #393f50;
+  --header-bg-color: #323a4b;
+  --main-color: #fefffd;
+  --accent-color: #fff;
+}

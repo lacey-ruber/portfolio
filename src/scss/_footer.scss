@@ -1,0 +1,13 @@
+.footer {
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span {
+    line-height: 24px;
+  }
+}
