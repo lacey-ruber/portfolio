@@ -2,7 +2,8 @@
   padding: 80px 0px 100px 0px;
   &__body {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__info {
@@ -10,7 +11,7 @@
     text-align: center;
     align-items: center;
     flex: 1 1;
-    margin: 0px 0px 0px 50px;
+    margin: 20px 0px 0px 0px;
     max-width: 400px;
     span {
       font-size: 18px;
@@ -105,10 +106,6 @@
 @media (max-width: 767px) {
   .contacts {
     padding: 40px 0px 50px 0px;
-  }
-  .contacts__body {
-    flex-direction: column-reverse;
-    align-items: center;
   }
   .contacts__info {
     margin: 20px 0px 0px 0px;
