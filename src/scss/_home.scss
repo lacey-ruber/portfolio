@@ -11,6 +11,9 @@
     max-width: 600px;
     width: 100%;
     padding: 50px 0;
+    @media (max-width: 767px) {
+      padding: 120px 0 70px 0;
+    }
 
     p {
       margin-top: 30px;
@@ -25,6 +28,15 @@
     &_btns {
       display: flex;
       flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    height: auto;
+    &__container {
+      justify-content: flex-start;
     }
   }
 }
